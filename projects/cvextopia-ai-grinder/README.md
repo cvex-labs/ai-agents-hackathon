@@ -73,7 +73,7 @@ We are aiming for the following tracks:
     - Before running the app, you need to set up your configuration file.
     - Create a file named config.json inside the src folder:
      ```bash
-     touch src/config.json
+     touch config.json
      ```
 
 2. **Add the following configuration template:**  
@@ -96,7 +96,7 @@ We are aiming for the following tracks:
 
 1. **Run the app:**  
    ```bash
-   streamlit run src/app.py
+   streamlit run app.py
    ```
 
 5. **Access the app:**  
@@ -108,7 +108,23 @@ We are aiming for the following tracks:
 ### Using the App  
 - **Manual Trades:** Execute your orders with full control.  
 - **Positions Info:** Keep track of your current open positions.  
-- **AI Strategies:** Analyze potential trades and see GPT-based predictions.  
+- **AI Strategies:** Analyze potential trades and see GPT-based predictions.
+
+  ### 💡 Usage:
+- **Manual Trades:**
+     - Select your contract from the dropdown.
+     - Input quantity, order type, limit price (if applicable), time in force, and whether to reduce the position.
+     - Click Open Long or Open Short to place the order.
+     - Check Positions Info for the updated position list.
+
+- **Position Management:**
+     - View your active positions and open orders.
+     - Click Cancel All Orders to clear your active trades.
+
+- **AI Strategies:**
+     - Choose a contract and click Analyze Potential to get AI-driven insights.
+     - The AI provides a trading decision (LONG, SHORT, STAY OUT) and a confidence score.
+     - Use these insights to make informed trading decisions.
 
 ## ⚠️ Important Notes  
 Due to the current CVEX API limitation (no available credits), some manual order functions and additional features couldn't be fully tested. Despite this, the app structure and core functionalities are ready for integration once the API issue is resolved.
@@ -133,50 +149,6 @@ Due to the current CVEX API limitation (no available credits), some manual order
 ### User Feedback:  
 - After the Hackathon, I plan to collect feedback from users to improve UI and functionality.  
 - Regular updates to adapt to changing market conditions and user preferences.  
-
-## 💬 Why Vote for CVEXTopia AI Grinder?  
-This project was built with the community in mind. I believe CVEX can thrive if users feel in control of their trades rather than overwhelmed by data or uncertain execution. By making a fun, intuitive, and strategic tool, I aim to empower traders to make better decisions while enjoying the grind. Let’s make CVEX not just functional but fun!
-
-
-### 💡 Usage:
-- **Manual Trades:**
-     - Select your contract from the dropdown.
-     - Input quantity, order type, limit price (if applicable), time in force, and whether to reduce the position.
-     - Click Open Long or Open Short to place the order.
-     - Check Positions Info for the updated position list.
-
-- **Position Management:**
-     - View your active positions and open orders.
-     - Click Cancel All Orders to clear your active trades.
-
-- **AI Strategies:**
-     - Choose a contract and click Analyze Potential to get AI-driven insights.
-     - The AI provides a trading decision (LONG, SHORT, STAY OUT) and a confidence score.
-     - Use these insights to make informed trading decisions.
-
-### ⚠️ Important Notes:
-Due to the current CVEX API limitation (no available credits), some manual order functions and additional features couldn't be fully tested.
-Despite this, the app structure and core functionalities are prepared for further integration once the API issue is resolved.
-
-- **Known Issues:**
-     - Manual Trading: Order management may have limited testing due to API credit exhaustion.
-     - Position Closing: Planned to add a safe closing mechanism.
-     - AI Automation: The foundation is ready, but automatic trading needs more testing.
-
-### 🌟 Future Plans:
-- **Mass Adoption & Error Prevention:**
-     - Implement real-time market checks to avoid trading during low liquidity or high volatility periods.
-
-- **Enhanced AI Integration:**
-     - Add more AI trading strategies with tailored risk management.
-
-     - Implement an Auto Grind Mode for continuous monitoring and execution.
-
-- **Safety-First Approach:**
-     - Automated position closing with a price divergence safety check to minimize losses during volatile markets.
-
-- **User Feedback:**
-     - Gather feedback to improve UI/UX and add more requested features.
 
 ### Why Vote for CVEXTopia AI Grinder?
 This project was built with the community in mind.
