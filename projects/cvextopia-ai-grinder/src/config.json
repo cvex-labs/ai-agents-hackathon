@@ -1,0 +1,9 @@
+{
+    "cvex_api_url": "https://api.cvex.trade",
+    "openai_api_key": "insert key here",
+    "cvex_api_key": "insert key here",
+    "private_key_path": "your pem file path",
+    "sleep_interval": 3600,
+    "auto_trade_threshold": 80
+  }
+  
